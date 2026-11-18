@@ -1,0 +1,1532 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=Popstan2020
+Name=POPSTAN2020_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=C7364C05282AB1D1C6BAC2BA36130DC912670B034E53AB873EA6248099EEFE31
+
+[Languages]
+EN=English
+FR=French
+KISWAHILI=KISWAHILI
+
+[Level]
+Label=Popstan2020 Level
+Name=POPSTAN2020_LEVEL
+
+[IdItems]
+
+[Item]
+Label=Province
+Name=PROVINCE
+Start=2
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Province
+Name=PROVINCE_VS1
+Value=1;Central
+Value=2;Eastern
+Value=3;Northern
+Value=4;Western
+
+[Item]
+Label=District
+Name=DISTRICT
+Start=3
+Len=2
+DataType=Numeric
+
+[Item]
+Label=Enumeration Area
+Name=ENUMERATION_AREA
+Start=5
+Len=3
+DataType=Numeric
+
+[Item]
+Label=Area Type
+Name=AREA_TYPE
+Start=8
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Area Type
+Name=AREA_TYPE_VS1
+Value=1;Urban
+Value=2;Peri-Urban
+Value=3;Rural
+
+[Item]
+Label=Household Number
+Name=HOUSEHOLD_NUMBER
+Start=9
+Len=3
+DataType=Numeric
+
+[Record]
+Label=Popstan2020 Record
+Name=POPSTAN2020_REC
+RecordTypeValue='1'
+RecordLen=61
+
+[Item]
+Label=province name
+Name=PROVINCE_NAME
+Start=12
+Len=20
+DataType=Alpha
+
+[Item]
+Label=District name
+Name=DISTRICT_NAME
+Start=32
+Len=30
+DataType=Alpha
+
+[Record]
+Label=Housing Record
+Name=HOUSING_REC
+RecordTypeValue='F'
+Required=No
+RecordLen=134
+
+[Item]
+Label=Number of rooms
+Name=NUMBER_OF_ROOMS
+Start=12
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Number of rooms
+Name=NUMBER_OF_ROOMS_VS1
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+Value=5;5
+Value=6;6
+Value=7;7
+Value=8;8
+Value=9;9
+Value=10;10
+Value=11;11
+Value=12;12
+Value=13;13
+Value=14;14
+Value=15;15
+Value=16;16
+Value=17;17
+Value=18;18
+Value=19;19
+Value=20;20
+
+[Item]
+Label=Type of main dwelling
+Name=TYPE_OF_MAIN_DWELLING
+Start=14
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Type of main dwelling
+Name=TYPE_OF_MAIN_DWELLING_VS1
+Value=1;Detached house
+Value=2;Semi-detached house
+Value=3;Apartment/flat
+Value=4;Traditional house
+Value=5;Other
+Value=6;Rented
+
+[Item]
+Label=Number of household members
+Name=NUM_HH_MEMBERS
+Start=15
+Len=2
+DataType=Numeric
+
+[Item]
+Label=Number of bedrooms
+Name=NUMBER_OF_BEDROOMS
+Start=17
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Did any member of this household die during the reference period?
+Name=NUMBER_OF_DEATHS
+Start=19
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Did any member of this household die during the reference period?
+Name=NUMBER_OF_DEATHS_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Main material of roof
+Name=ROOF_MATERIAL
+Start=20
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Main material of roof
+Name=ROOF_MATERIAL_VS1
+Value=1;Iron sheets
+Image=.\Resources\Images\roof2.jpg
+Value=2;Tiles
+Image=.\Resources\Images\roof1.jpg
+Value=3;Thatch/grass
+Image=.\Resources\Images\roof5th.jpg
+Value=4;Concrete
+Image=.\Resources\Images\roof4.jpg
+Value=5;Other
+
+[Item]
+Label=Main material of walls
+Name=WALL_MATERIAL
+Start=21
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Main material of walls
+Name=WALL_MATERIAL_VS1
+Value=1;Stone
+Value=2;Brick
+Value=3;Mud
+Value=4;Wood
+Value=5;Concrete
+Value=6;Other
+
+[Item]
+Label=Main material of floor
+Name=FLOOR_MATERIAL
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Main material of floor
+Name=FLOOR_MATERIAL_VS1
+Value=1;Cement
+Value=2;Earth/Mud
+Value=3;Wood
+Value=4;Tiles
+Value=5;Concrete
+Value=6;Other
+
+[Item]
+Label=Main source of drinking water
+Name=WATER_SOURCE
+Start=23
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Main source of drinking water
+Name=WATER_SOURCE_VS1
+Value=1;Piped water
+Value=2;Borehole
+Value=3;Protected well
+Value=4;Unprotected well
+Value=5;River/stream
+Value=6;Lake
+Value=7;Rainwater
+Value=8;Water vendor
+Value=9;Public tap
+Value=10;Other
+
+[Item]
+Label=Type of toilet facility
+Name=TOILET_TYPE
+Start=25
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Type of toilet facility
+Name=TOILET_TYPE_VS1
+Value=1;Flush toilet
+Value=2;Ventilated improved pit latrine
+Value=3;Pit latrine
+Value=4;Composting toilet
+Value=5;Bucket toilet
+Value=6;No toilet facility
+Value=7;Other
+
+[Item]
+Label=Household has electricity
+Name=HAS_ELECTRICITY
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Household has electricity
+Name=HAS_ELECTRICITY_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Main source of lighting
+Name=LIGHTING_SOURCE
+Start=27
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Main source of lighting
+Name=LIGHTING_SOURCE_VS1
+Value=1;Electricity
+Value=2;Solar
+Value=3;Kerosene
+Value=4;Battery/torch
+Value=5;Gas
+Value=6;Candles
+Value=7;Other
+
+[Item]
+Label=Main source of cooking fuel
+Name=COOKING_FUEL
+Start=29
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Main source of cooking fuel
+Name=COOKING_FUEL_VS1
+Value=1;Electricity
+Value=2;LPG/Gas
+Value=3;Kerosene
+Value=4;Firewood
+Value=5;Charcoal
+Value=6;Biogas
+Value=7;Solar
+Value=8;Other
+
+[Item]
+Label=Specify other lighting source
+Name=OTHER_LIGHTING_SOURCE
+Start=31
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Specify other cooking source
+Name=OTHER_COOKING_SOURCE
+Start=61
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Monthly rent
+Name=MONTHLY_RENT
+Start=91
+Len=6
+DataType=Numeric
+
+[Item]
+Label=Distance to water measured in
+Name=WATER_DISTANCE_UNIT
+Start=97
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Distance to water measured in
+Name=WATER_DISTANCE_UNIT_VS1
+Value=1;Minutes
+Value=2;Kilometers
+
+[Item]
+Label=Distance to water in minutes
+Name=WATER_DISTANCE_MINUTES
+Start=98
+Len=3
+DataType=Numeric
+
+[Item]
+Label=Distance to water in kilometers
+Name=WATER_DISTANCE_KM
+Start=101
+Len=4
+DataType=Numeric
+
+[Item]
+Label=Other wall material
+Name=OTHER_WALL_MATERIAL
+Start=105
+Len=20
+DataType=Alpha
+
+[Item]
+Label=Were assets purchased with a loan?
+Name=POSSESSIONS_PURCHASED_WITH_LOAN
+Start=125
+Len=10
+DataType=Alpha
+
+[Record]
+Label=Person Record
+Name=PERSON_REC
+RecordTypeValue='B'
+Required=No
+MaxRecords=30
+RecordLen=122
+
+[Item]
+Label=Person number
+Name=PERSON_NUMBER
+Start=12
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Person number
+Name=PERSON_NUMBER_VS1
+Value=1:10;1 - 10
+Value=11:20;11 - 20
+Value=21:30;21 - 30
+
+[Item]
+Label=Name
+Name=NAME
+Start=14
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Relationship
+Name=RELATIONSHIP
+Start=44
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Relationship
+Name=RELATIONSHIP_VS1
+Value=1;Head
+Value=2;Spouse
+Value=3;Son/Daughter
+Value=4;Parent
+Value=5;Grandchild
+Value=6;Non Relative
+
+[ValueSet]
+Label=Relationship - Male
+Name=RELATIONSHIP_MALE
+Value=1;Head
+Value=2;Spouse
+Value=3;Son
+Value=4;Parent
+Value=5;Grandchild
+Value=6;Brother
+
+[ValueSet]
+Label=Relationship - Female
+Name=RELATIONSHIP_FEMALE
+Value=1;Head
+Value=2;Spouse
+Value=3;Daughter
+Value=4;Parent
+Value=5;Grandchild
+Value=6;sister
+
+[Item]
+Label=Sex
+Name=SEX
+Start=45
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Sex
+Name=SEX_VS1
+Value=1;Male|Homme|Mwanamume
+Value=2;Female|Femme|Mwanamke
+
+[Item]
+Label=Age
+Name=AGE
+Start=46
+Len=3
+DataType=Numeric
+
+[ValueSet]
+Label=Age
+Name=AGE_VS1
+Value=0;0
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+Value=5;5
+Value=6;6
+Value=7;7
+Value=8;8
+Value=9;9
+Value=10;10
+Value=11;11
+Value=12;12
+Value=13;13
+Value=14;14
+Value=15;15
+Value=16;16
+Value=17;17
+Value=18;18
+Value=19;19
+Value=20;20
+Value=21;21
+Value=22;22
+Value=23;23
+Value=24;24
+Value=25;25
+Value=26;26
+Value=27;27
+Value=28;28
+Value=29;29
+Value=30;30
+Value=31;31
+Value=32;32
+Value=33;33
+Value=34;34
+Value=35;35
+Value=36;36
+Value=37;37
+Value=38;38
+Value=39;39
+Value=40;40
+Value=41;41
+Value=42;42
+Value=43;43
+Value=44;44
+Value=45;45
+Value=46;46
+Value=47;47
+Value=48;48
+Value=49;49
+Value=50;50
+Value=51;51
+Value=52;52
+Value=53;53
+Value=54;54
+Value=55;55
+Value=56;56
+Value=57;57
+Value=58;58
+Value=59;59
+Value=60;60
+Value=61;61
+Value=62;62
+Value=63;63
+Value=64;64
+Value=65;65
+Value=66;66
+Value=67;67
+Value=68;68
+Value=69;69
+Value=70;70
+Value=71;71
+Value=72;72
+Value=73;73
+Value=74;74
+Value=75;75
+Value=76;76
+Value=77;77
+Value=78;78
+Value=79;79
+Value=80;80
+Value=81;81
+Value=82;82
+Value=83;83
+Value=84;84
+Value=85;85
+Value=86;86
+Value=87;87
+Value=88;88
+Value=89;89
+Value=90;90
+Value=91;91
+Value=92;92
+Value=93;93
+Value=94;94
+Value=95;95
+Value=96;96
+Value=97;97
+Value=98;98
+Value=99;99
+Value=100;100
+Value=101;101
+Value=102;102
+Value=103;103
+Value=104;104
+Value=105;105
+Value=106;106
+Value=107;107
+Value=108;108
+Value=109;109
+Value=110;110
+Value=111;111
+Value=112;112
+Value=113;113
+Value=114;114
+Value=115;115
+Value=116;116
+Value=117;117
+Value=118;118
+Value=119;119
+Value=120;120
+
+[ValueSet]
+Label=AGE
+Name=AGE_VS2
+Value=999;Don't know
+
+[Item]
+Label=Date of Birth
+Name=DATE_OF_BIRTH
+Start=49
+Len=8
+DataType=Numeric
+
+[Item]
+Label=Year of Birth
+Name=DOB_YEAR
+Start=49
+Len=4
+ItemType=SubItem
+DataType=Numeric
+
+[Item]
+Label=Month of Birth
+Name=DOB_MONTH
+Start=53
+Len=2
+ItemType=SubItem
+DataType=Numeric
+
+[ValueSet]
+Label=Month of Birth
+Name=MONTH_OF_BIRTH_VS
+Value=1;January
+Value=2;February
+Value=3;March
+Value=4;April
+Value=5;May
+Value=6;June
+Value=7;July
+Value=8;August
+Value=9;September
+Value=10;October
+Value=11;November
+Value=12;December
+
+[Item]
+Label=Day of Birth
+Name=DOB_DAY
+Start=55
+Len=2
+ItemType=SubItem
+DataType=Numeric
+
+[ValueSet]
+Label=Day of Birth
+Name=DAY_OF_BIRTH_VS
+Value=0;0
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+Value=5;5
+Value=6;6
+Value=7;7
+Value=8;8
+Value=9;9
+Value=10;10
+Value=11;11
+Value=12;12
+Value=13;13
+Value=14;14
+Value=15;15
+Value=16;16
+Value=17;17
+Value=18;18
+Value=19;19
+Value=20;20
+Value=21;21
+Value=22;22
+Value=23;23
+Value=24;24
+Value=25;25
+Value=26;26
+Value=27;27
+Value=28;28
+Value=29;29
+Value=30;30
+Value=31;31
+
+[Item]
+Label=Place of Birth
+Name=PLACE_OF_BIRTH
+Start=57
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Place of Birth
+Name=PLACE_OF_BIRTH_VS1
+Link=140580392
+Value=1;NAIROBI
+Value=2;MOMBASA
+Value=3;KISUMU
+Value=4;NAKURU
+Value=5;UASIN GISHU
+
+[Item]
+Label=Residence 1 Year Ago
+Name=RESIDENCE_1YR
+Start=58
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Residence 1 Year Ago
+Name=RESIDENCE_1YR_VS1
+Link=140580392
+
+[Item]
+Label=Disabilities
+Name=DISABILITIES
+Start=59
+Len=6
+DataType=Alpha
+
+[ValueSet]
+Label=Disabilities
+Name=DISABILITIES_VS1
+Value='A     ';Visual
+Value='B     ';Hearing
+Value='C     ';Speech
+Value='D     ';Physical
+Value='E     ';Mental
+Value='F     ';Self-care
+
+[Item]
+Label=Marital status
+Name=MARITAL_STATUS
+Start=65
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Marital status
+Name=MARITAL_STATUS_VS1
+Value=1;Never married|Célibataire
+Value=2;Married|Marié(e)
+Value=3;Separated|Séparé(e)
+Value=4;Divorced|Divorcé(e)
+Value=5;Widowed|Veuf / Veuve
+
+[Item]
+Label=Current residence status
+Name=RESIDENCE_STATUS
+Start=66
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Current residence status
+Name=RESIDENCE_STATUS_VS1
+Value=1;Usual resident
+Value=2;Visitor
+
+[Item]
+Label=Citizenship status
+Name=CITIZENSHIP
+Start=67
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Citizenship status
+Name=CITIZENSHIP_VS1
+Value=1;Citizen
+Value=2;Non-citizen
+
+[Item]
+Label=Birth registered
+Name=BIRTH_REGISTERED
+Start=68
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Birth registered
+Name=BIRTH_REGISTERED_VS1
+Value=1;Yes
+Value=2;No
+Value=9;Don't know
+
+[Item]
+Label=Is your mother alive?
+Name=MOTHER_ALIVE
+Start=69
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Is your mother alive?
+Name=MOTHER_ALIVE_VS1
+Value=1;Yes
+Value=2;No
+Value=9;Don't know
+
+[Item]
+Label=Languages spoken
+Name=LANGUAGES_SPOKEN
+Start=70
+Len=6
+DataType=Alpha
+
+[ValueSet]
+Label=Languages spoken
+Name=LANGUAGES_SPOKEN_VS1
+Value='A     ';English
+Value='B     ';Kiswahili
+Value='C     ';Local language
+Value='D     ';French
+Value='E     ';Other
+
+[Item]
+Label=Has ever attended school
+Name=EVER_ATTENDED_SCHOOL
+Start=76
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Has ever attended school
+Name=EVER_ATTENDED_SCHOOL_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Highest level of education completed
+Name=EDUCATION_LEVEL
+Start=77
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Highest level of education completed
+Name=EDUCATION_LEVEL_VS1
+Value=1;None
+Value=2;Primary
+Value=3;Secondary
+Value=4;College
+Value=5;University
+Value=6;Postgraduate
+
+[Item]
+Label=Highest grade/class completed
+Name=GRADE_COMPLETED
+Start=78
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Highest grade/class completed
+Name=GRADE_COMPLETED_VS1
+Value=0;None
+Value=1;Grade 1
+Value=2;Grade 2
+Value=3;Grade 3
+Value=4;Grade 4
+Value=5;Grade 5
+Value=6;Grade 6
+Value=7;Grade 7
+Value=8;Grade 8
+Value=9;Grade 9
+Value=10;Grade 10
+Value=11;Grade 11
+Value=12;Grade 12
+
+[Item]
+Label=Can read and write
+Name=CAN_READ_WRITE
+Start=80
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Can read and write
+Name=CAN_READ_WRITE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Currently attending school
+Name=CURRENTLY_ATTENDING
+Start=81
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Currently attending school
+Name=CURRENTLY_ATTENDING_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Mother line number
+Name=MOTHER_LINE_NUMBER
+Start=82
+Len=2
+DataType=Numeric
+
+[Item]
+Label=Are there more household members?
+Name=MORE_PEOPLE
+Start=84
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Are there more household members?
+Name=MORE_PEOPLE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Sign language
+Name=SIGN_LANGUAGE
+Start=85
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Sign language
+Name=SIGN_LANGUAGE_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=OTHER LANGUAGE
+Name=OTHER_LANGUAGE
+Start=86
+Len=20
+DataType=Alpha
+
+[Item]
+Label=Ever given birth
+Name=EVER_GIVEN_BIRTH
+Start=106
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Ever given birth
+Name=EVER_GIVEN_BIRTH_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Number of children ever born
+Name=NUMBER_CHILDREN_BORN
+Start=107
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Number of children ever born
+Name=NUMBER_CHILDREN_BORN_VS1
+Value=0;children
+Value=1;children
+Value=2;children
+Value=3;children
+Value=4;children
+Value=5;children
+Value=6;children
+Value=7;children
+Value=8;children
+Value=9;children
+Value=10;children
+Value=11;children
+Value=12;children
+Value=13;children
+Value=14;children
+Value=15;children
+Value=16;children
+Value=17;children
+Value=18;children
+Value=19;children
+Value=20;children
+
+[Item]
+Label=Number of children currently living
+Name=CHILDREN_CURRENTLY_LIVING
+Start=109
+Len=2
+DataType=Numeric
+
+[Item]
+Label=Number of children who died
+Name=CHILDREN_DIED
+Start=111
+Len=2
+DataType=Numeric
+
+[Item]
+Label=Boys in household
+Name=BOYS_IN_HOUSEHOLD
+Start=113
+Len=2
+DataType=Numeric
+
+[Item]
+Label=Girls in household
+Name=GIRLS_IN_HOUSEHOLD
+Start=115
+Len=2
+DataType=Numeric
+
+[Item]
+Label=Children in household
+Name=CHILDREN_IN_HOUSEHOLD
+Start=117
+Len=2
+DataType=Numeric
+
+[Item]
+Label=Region of birth (practice)
+Name=PRACTICE_REGION
+Start=119
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Region of birth (practice)
+Name=PRACTICE_REGION_VS1
+Value=1;Nairobi region
+Value=2;Coast region
+Value=3;Western region
+Value=4;Rift Valley region
+
+[Item]
+Label=Primary language spoken
+Name=MAIN_LANGUAGE
+Start=120
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Primary language spoken
+Name=MAIN_LANGUAGE_VS1
+Value=1;English
+Value=2;Kiswahili
+Value=3;Local language
+Value=4;French
+Value=5;Other
+
+[Item]
+Label=Primary language source
+Name=MAIN_LANGUAGE_SOURCE
+Start=121
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Primary language source
+Name=MAIN_LANGUAGE_SOURCE_VS1
+Value=1;English
+Value=2;Kiswahili
+Value=3;Local language
+Value=4;French
+Value=5;Other
+
+[Item]
+Label=place of birth source
+Name=PLACE_OF_BIRTH_SOURCE
+Start=122
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=place of birth source
+Name=PLACE_OF_BIRTH_SOURCE_VS1
+Value=1;NAIROBI
+Value=2;MOMBASA
+Value=3;KISUMU
+Value=4;NAKURU
+Value=5;UASIN GISHU
+
+[Record]
+Label=Deaths Record
+Name=DEATHS_REC
+RecordTypeValue='E'
+Required=No
+MaxRecords=30
+RecordLen=58
+
+[Item]
+Label=Sex of deceased
+Name=DEATH_SEX
+Start=12
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Sex of deceased
+Name=DEATH_SEX_VS1
+Value=1;Male
+Value=2;Female
+
+[Item]
+Label=Age at death
+Name=AGE_AT_DEATH
+Start=13
+Len=3
+DataType=Numeric
+
+[Item]
+Label=Date of death
+Name=DATE_OF_DEATH
+Start=16
+Len=8
+DataType=Numeric
+
+[Item]
+Label=Relationship to household head
+Name=DEATH_RELATIONSHIP
+Start=24
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Relationship to household head
+Name=DEATH_RELATIONSHIP_VS1
+Value=1;Relative
+Value=2;Non-Relative
+
+[Item]
+Label=Died while pregnant
+Name=DIED_WHILE_PREGNANT
+Start=25
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Died while pregnant
+Name=DIED_WHILE_PREGNANT_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Cause of death related to pregnancy
+Name=PREGNANCY_RELATED_DEATH
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Cause of death related to pregnancy
+Name=PREGNANCY_RELATED_DEATH_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Line number
+Name=DEATH_LINE_NUMBER
+Start=27
+Len=2
+DataType=Numeric
+
+[Item]
+Label=NAME OF THE DECEASED
+Name=NAME_OF_DECEASED
+Start=29
+Len=30
+DataType=Alpha
+
+[Record]
+Label=Interview Record
+Name=INTERVIEW_REC
+RecordTypeValue='A'
+Required=No
+RecordLen=86
+
+[Item]
+Label=Date of interview
+Name=INTERVIEW_DATE
+Start=12
+Len=8
+DataType=Numeric
+
+[Item]
+Label=Year of interview
+Name=INTERVIEW_YEAR
+Start=12
+Len=4
+ItemType=SubItem
+DataType=Numeric
+
+[Item]
+Label=Month of interview
+Name=INTERVIEW_MONTH
+Start=16
+Len=2
+ItemType=SubItem
+DataType=Numeric
+
+[Item]
+Label=Day of interview
+Name=INTERVIEW_DAY
+Start=18
+Len=2
+ItemType=SubItem
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Interview start time
+Name=INTERVIEW_START_TIME
+Start=20
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Start hour
+Name=START_HOUR
+Start=20
+Len=2
+ItemType=SubItem
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Start hour
+Name=START_HOUR_VS1
+Value=0;0
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+Value=5;5
+Value=6;6
+Value=7;7
+Value=8;8
+Value=9;9
+Value=10;10
+Value=11;11
+Value=12;12
+Value=13;13
+Value=14;14
+Value=15;15
+Value=16;16
+Value=17;17
+Value=18;18
+Value=19;19
+Value=20;20
+Value=21;21
+Value=22;22
+Value=23;23
+
+[Item]
+Label=Start minute
+Name=START_MINUTE
+Start=22
+Len=2
+ItemType=SubItem
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Start minute
+Name=START_MINUTE_VS1
+Value=0;0
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+Value=5;5
+Value=6;6
+Value=7;7
+Value=8;8
+Value=9;9
+Value=10;10
+Value=11;11
+Value=12;12
+Value=13;13
+Value=14;14
+Value=15;15
+Value=16;16
+Value=17;17
+Value=18;18
+Value=19;19
+Value=20;20
+Value=21;21
+Value=22;22
+Value=23;23
+Value=24;24
+Value=25;25
+Value=26;26
+Value=27;27
+Value=28;28
+Value=29;29
+Value=30;30
+Value=31;31
+Value=32;32
+Value=33;33
+Value=34;34
+Value=35;35
+Value=36;36
+Value=37;37
+Value=38;38
+Value=39;39
+Value=40;40
+Value=41;41
+Value=42;42
+Value=43;43
+Value=44;44
+Value=45;45
+Value=46;46
+Value=47;47
+Value=48;48
+Value=49;49
+Value=50;50
+Value=51;51
+Value=52;52
+Value=53;53
+Value=54;54
+Value=55;55
+Value=56;56
+Value=57;57
+Value=58;58
+Value=59;59
+
+[Item]
+Label=Interview end time
+Name=INTERVIEW_END_TIME
+Start=24
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=End hour
+Name=END_HOUR
+Start=24
+Len=2
+ItemType=SubItem
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=End hour
+Name=END_HOUR_VS1
+Value=0;0
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+Value=5;5
+Value=6;6
+Value=7;7
+Value=8;8
+Value=9;9
+Value=10;10
+Value=11;11
+Value=12;12
+Value=13;13
+Value=14;14
+Value=15;15
+Value=16;16
+Value=17;17
+Value=18;18
+Value=19;19
+Value=20;20
+Value=21;21
+Value=22;22
+Value=23;23
+
+[Item]
+Label=End minute
+Name=END_MINUTE
+Start=26
+Len=2
+ItemType=SubItem
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=End minute
+Name=END_MINUTE_VS1
+Value=0;0
+Value=1;1
+Value=2;2
+Value=3;3
+Value=4;4
+Value=5;5
+Value=6;6
+Value=7;7
+Value=8;8
+Value=9;9
+Value=10;10
+Value=11;11
+Value=12;12
+Value=13;13
+Value=14;14
+Value=15;15
+Value=16;16
+Value=17;17
+Value=18;18
+Value=19;19
+Value=20;20
+Value=21;21
+Value=22;22
+Value=23;23
+Value=24;24
+Value=25;25
+Value=26;26
+Value=27;27
+Value=28;28
+Value=29;29
+Value=30;30
+Value=31;31
+Value=32;32
+Value=33;33
+Value=34;34
+Value=35;35
+Value=36;36
+Value=37;37
+Value=38;38
+Value=39;39
+Value=40;40
+Value=41;41
+Value=42;42
+Value=43;43
+Value=44;44
+Value=45;45
+Value=46;46
+Value=47;47
+Value=48;48
+Value=49;49
+Value=50;50
+Value=51;51
+Value=52;52
+Value=53;53
+Value=54;54
+Value=55;55
+Value=56;56
+Value=57;57
+Value=58;58
+Value=59;59
+
+[Item]
+Label=Line number of respondent
+Name=RESPONDENT_LINE_NUMBER
+Start=28
+Len=2
+DataType=Numeric
+
+[Item]
+Label=‌interview start timestamp
+Name=INTERVIEW_START_TIMESTAMP
+Start=30
+Len=13
+DataType=Numeric
+Decimal=3
+DecimalChar=Yes
+
+[Item]
+Label=interview end timestamp
+Name=INTERVIEW_END_TIMESTAMP
+Start=43
+Len=13
+DataType=Numeric
+Decimal=3
+DecimalChar=Yes
+
+[Item]
+Label=interview duration minutes
+Name=INTERVIEW_DURATION_MINUTES
+Start=56
+Len=6
+DataType=Numeric
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=Household photograph
+Name=PHOTO
+Start=62
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Household photograph
+Name=PHOTO_VS_PHOTO_TAKEN
+Value=1;Take photo
+Value=2;View photo
+Value=3;Keep photo
+Value=9;Refused
+
+[ValueSet]
+Label=Household photograph
+Name=PHOTO_VS_NO_PHOTO
+Value=1;Take photo
+Value=9;Refused
+
+[Item]
+Label=Household Latitude
+Name=LATITUDE
+Start=63
+Len=12
+DataType=Numeric
+Decimal=8
+DecimalChar=Yes
+
+[Item]
+Label=Household Longitude
+Name=LONGITUDE
+Start=75
+Len=12
+DataType=Numeric
+Decimal=8
+DecimalChar=Yes
+
+[Record]
+Label=Possessions record
+Name=POSSESSIONS_REC
+RecordTypeValue='G'
+Required=No
+MaxRecords=10
+RecordLen=33
+
+[Item]
+Label=Asset name
+Name=ASSET_NAME
+Start=12
+Len=20
+DataType=Alpha
+
+[Item]
+Label=Quantity owned
+Name=QUANTITY
+Start=32
+Len=2
+DataType=Numeric

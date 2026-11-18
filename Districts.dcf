@@ -1,0 +1,50 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=Ann2 District Codes Dictionary
+Name=ANN2_DISTRICT_CODES_DICT
+RecordTypeStart=0
+RecordTypeLen=0
+Positions=Relative
+ZeroFill=Yes
+DecimalChar=Yes
+SecurityOptions=226316FAC6ED609ACBD9344DEFC75A269F69B074ACAD0B69C670369F1292DCCBD24CF080705C0538AAD950E39665E896
+
+[Level]
+Label=Ann2 District Codes Level
+Name=ANN2_DISTRICT_CODES_LEVEL
+
+[IdItems]
+
+[Item]
+Label=Di Province
+Name=DI_PROVINCE
+Start=1
+Len=1
+DataType=Numeric
+
+[Item]
+Label=Di District
+Name=DI_DISTRICT
+Start=2
+Len=2
+DataType=Numeric
+
+[Record]
+Label=Ann2 District Codes Record
+Name=ANN2_DISTRICT_CODES_REC
+RecordTypeValue=''
+RecordLen=25
+
+[Item]
+Label=Di Province Name
+Name=DI_PROVINCE_NAME
+Start=4
+Len=11
+DataType=Alpha
+
+[Item]
+Label=Di District Name
+Name=DI_DISTRICT_NAME
+Start=15
+Len=11
+DataType=Alpha

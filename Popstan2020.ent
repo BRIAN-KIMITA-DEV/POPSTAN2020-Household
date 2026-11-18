@@ -1,0 +1,31 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=POPSTAN2020
+Name=POPSTAN2020
+AppType=DataEntry
+OperatorID=No
+PartialSave=Yes
+AutoPartialSaveMinutes=1
+CAPI=Yes
+CaseTree=Always
+CreateListing=No
+CreateLog=No
+ShowErrorMessageNumbers=No
+ComboBoxShowOnlyDiscreteValues=Yes
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[External Dictionaries]
+File=.\Districts.dcf
+[AppCode]
+File=.\Popstan2020.ent.apc
+[Message]
+File=.\Popstan2020.ent.mgf
+[Help]
+File=.\Popstan2020.ent.qsf
+[Forms]
+File=.\Popstan2020.fmf
+[Resources]
+Folder=.\Resources
+[Dictionary Types]
+Dict-Type=.\Popstan2020.dcf,Input,.\Popstan2020.fmf
+Dict-Type=.\Districts.dcf,External

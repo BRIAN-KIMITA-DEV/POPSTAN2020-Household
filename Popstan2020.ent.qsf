@@ -1,0 +1,140 @@
+﻿---
+fileType: Question Text
+version: CSPro 7.7
+languages:
+  - name: EN
+    label: English
+  - name: FR
+    label: French
+  - name: KISWAHILI
+    label: KISWAHILI
+styles:
+  - name: Normal
+    className: normal
+    css: |
+      font-family: Arial;font-size: 16px;
+  - name: Instruction
+    className: instruction
+    css: |
+      font-family: Arial;font-size: 14px;color: #0000FF;
+  - name: Heading 1
+    className: heading1
+    css: |
+      font-family: Arial;font-size: 36px;
+  - name: Heading 2
+    className: heading2
+    css: |
+      font-family: Arial;font-size: 24px;
+  - name: Heading 3
+    className: heading3
+    css: |
+      font-family: Arial;font-size: 18px;
+questions:
+  - name: POPSTAN2020_DICT.NAME
+    conditions:
+      - logic: curocc()=1
+        questionText:
+          EN: |
+            <p>What is the name of the head of the household?</p><p></p>
+      - logic: curocc() >= 2
+        questionText:
+          EN: |
+            <p>What is the name of the next member of the household?</p><p></p>
+      - {}
+  - name: POPSTAN2020_DICT.SEX
+    conditions:
+      - questionText:
+          EN: |
+            <p>Is  ~~NAME~~ a male or a female?</p><p></p>
+          FR: |
+            ~~NAME~~ est-il un homme ou une femme ?<p></p>
+          KISWAHILI: |
+            Jinsia ya mtu huyu ni ipi?<p></p>
+  - name: POPSTAN2020_DICT.RELATIONSHIP
+    conditions:
+      - logic: curocc()=1
+        questionText:
+          EN: |
+            <p>&nbsp;~~NAME~~ is the head of the household?</p><p></p><p><br></p><p><br></p><p></p>
+      - logic: curocc()>=2
+        questionText:
+          EN: |
+            &nbsp;what is ~~NAME~~ relationship to the household head?<p></p>
+  - name: POPSTAN2020_DICT.AGE
+    conditions:
+      - questionText:
+          EN: |
+            <p>Ho<span class="instruction">﻿</span>w <span class="instruction">﻿</span>old is  ~~NAME~~ in completed years?</p><p><b><u><i><span class="instruction">Enter age in completed years ("000" for</span><span style="color: rgb(0, 0, 255); font-size: 14px;" class="instruction">﻿</span><span class="instruction">&nbsp;children less than one year old)</span></i></u></b></p><p><span class="heading2">﻿</span><br></p><p></p>
+  - name: POPSTAN2020_DICT.MARITAL_STATUS
+    conditions:
+      - questionText:
+          EN: |
+            <p>What is the marital status of ~~NAME~~?&nbsp;</p><p><p></p></p>
+          FR: |
+            <p>Quel est l’état matrimonial de ~~NAME~~ ?</p><p></p>
+  - name: POPSTAN2020_DICT.PRACTICE_REGION
+    conditions:
+      - questionText:
+          EN: |
+            in which region were you born?<p></p>
+  - name: POPSTAN2020_DICT.PLACE_OF_BIRTH
+    conditions:
+      - questionText:
+          EN: |
+            in which county were you born?<p></p>
+  - name: POPSTAN2020_DICT.RESIDENCE_1YR
+    conditions:
+      - questionText:
+          EN: |
+            which county did you reside in one year ago<p></p>
+  - name: POPSTAN2020_DICT.DISABILITIES
+    conditions:
+      - questionText:
+          EN: |
+            do you have any disabilities?<p></p>
+  - name: POPSTAN2020_DICT.CITIZENSHIP
+    conditions:
+      - questionText:
+          EN: |
+            what is your citizenship status<u> <b><i>currently</i></b></u><p></p>
+  - name: POPSTAN2020_DICT.LANGUAGES_SPOKEN
+    conditions:
+      - questionText:
+          EN: |
+            which languages do ~~NAME~~ speak<p></p>
+  - name: POPSTAN2020_DICT.MAIN_LANGUAGE
+    conditions:
+      - questionText:
+          EN: |
+            which is ~~NAME~~ main language<p></p>
+  - name: POPSTAN2020_DICT.TYPE_OF_MAIN_DWELLING
+    conditions:
+      - questionText:
+          EN: |
+            <p>&nbsp;</p><p></p>
+  - name: POPSTAN2020_DICT.NAME_OF_DECEASED
+    conditions:
+      - questionText:
+          EN: |
+            <br><p></p>
+  - name: POPSTAN2020_DICT.DEATH_RELATIONSHIP
+    conditions:
+      - questionText:
+          EN: |
+            <p>what is the relationship of&nbsp; ~~getocclabel()~~ with the household head?<span class="instruction normal">﻿</span></p><p></p><p></p>
+  - name: POPSTAN2020_DICT.CHILDREN_DIED
+    conditions:
+      - questionText:
+          EN: |
+            <p>How many children have died? Based on your previous answers, the calculated number of children who died is ~~calculatedChildrenDied~~</p><p></p>
+  - name: POPSTAN2020_DICT.ASSET_NAME
+    conditions:
+      - questionText:
+          EN: |
+            <p>What asset does the household own?</p><p><br></p><p></p>
+  - name: POPSTAN2020_DICT.QUANTITY
+    conditions:
+      - questionText:
+          EN: |
+            How many ~~ASSET_NAME~~ does this household own?<p></p>
+...

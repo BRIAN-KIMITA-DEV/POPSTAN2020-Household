@@ -1,0 +1,4 @@
+Language=FR
+100 Le chef de menage doit avoir au moins 12 ans.
+101 Corriger l'age
+102 Corriger le lien de parente
